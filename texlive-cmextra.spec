@@ -1,5 +1,11 @@
+# revision 14075
+# category Package
+# catalog-ctan undef
+# catalog-date undef
+# catalog-license undef
+# catalog-version undef
 Name:		texlive-cmextra
-Version:	20111101
+Version:	20111103
 Release:	1
 Summary:	TeXLive cmextra package
 Group:		Publishing
@@ -58,6 +64,7 @@ TeXLive cmextra package.
 %{_texmfdistdir}/fonts/tfm/public/cmextra/cmsslu30.tfm
 %{_texmfdistdir}/fonts/tfm/public/cmextra/cmssu30.tfm
 %{_texmfdistdir}/fonts/tfm/public/cmextra/cmvtti10.tfm
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -68,3 +75,5 @@ TeXLive cmextra package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}

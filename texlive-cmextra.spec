@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-cmextra
 Version:	20120611
-Release:	4
+Release:	5
 Summary:	Knuth's local information
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/systems/knuth/local

@@ -1,17 +1,11 @@
-# revision 32831
-# category Package
-# catalog-ctan /systems/knuth/local
-# catalog-date 2012-06-11 20:26:30 +0200
-# catalog-license knuth
-# catalog-version undef
 Name:		texlive-cmextra
-Version:	20190228
+Version:	57866
 Release:	1
 Summary:	Knuth's local information
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/systems/knuth/local
 License:	KNUTH
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmextra.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmextra.r57866.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -23,12 +17,12 @@ on, or complementary to, the matter in his distribution
 directories.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -82,7 +76,7 @@ directories.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0
+%autosetup -p1 -c
 
 %build
 

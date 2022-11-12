@@ -5,7 +5,7 @@ Summary:	Knuth's local information
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/systems/knuth/local
 License:	KNUTH
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmextra.r57866.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmextra.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg

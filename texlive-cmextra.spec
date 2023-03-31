@@ -1,6 +1,6 @@
 Name:		texlive-cmextra
 Version:	57866
-Release:	1
+Release:	2
 Summary:	Knuth's local information
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/systems/knuth/local
